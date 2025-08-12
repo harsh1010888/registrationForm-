@@ -15,8 +15,8 @@ app.use(bodyParser.json());
 // MySQL connection
 const db = mysql.createConnection({
   host: 'localhost',
-  user: 'root',
-  password: '2003',
+  user:  database name,
+  password: your pass,
   database: 'RegistrationDB'
 });
 
@@ -61,3 +61,4 @@ app.post('/register', (req, res) => {
 
 const PORT = 3000;
 app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
+
